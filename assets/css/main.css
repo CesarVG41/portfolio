@@ -2558,15 +2558,18 @@ input, select, textarea {
 	}
 
 		.work-item .image {
+			justify-content: center;
 			margin: 0 0 1.5em 0;
 		}
 
 		.work-item h3 {
+			justify-content: center;
 			font-size: 1em;
 			margin: 0 0 0.5em 0;
 		}
 
 		.work-item p {
+			justify-content: center;
 			font-size: 0.8em;
 			line-height: 1.5em;
 			margin: 0;
