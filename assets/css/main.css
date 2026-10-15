@@ -2572,6 +2572,11 @@ input, select, textarea {
 			margin: 0;
 		}
 
+		.work-item ul.actions {
+			justify-content: center;
+			margin-left: 0;
+		}
+
 /* Header */
 
 	#header {
