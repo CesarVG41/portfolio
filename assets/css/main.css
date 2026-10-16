@@ -2558,8 +2558,8 @@ input, select, textarea {
 	}
 
 		.work-item .image {
-			justify-content: center;
-			margin-left: 0;
+			/* justify-content: center; */
+			/* margin-left: 0; */
 			margin: 0 0 1.5em 0;
 		}
 
@@ -2571,10 +2571,10 @@ input, select, textarea {
 		}
 
 		.work-item p {
-			justify-content: center;
+			/* justify-content: center; */
+			/* margin-left: 0; */
 			font-size: 0.8em;
 			line-height: 1.5em;
-			margin-left: 0;
 			margin: 0;
 		}
 
