@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!-- Save copies of this file in your projects/ folder, e.g. projects/midi-controller.html -->
+<html>
+	<head>
+		<title>Project Title</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<style>
+			/* Hero: same background as the index header, parallax handled in the script below */
+			#hero {
+				align-items: center;
+				background-color: #1f1815;
+				background-image: url("../assets/css/images/overlay.png"), url("../images/bg.jpg");
+				background-position: 0 0, 0 -100px;
+				background-repeat: repeat, no-repeat;
+				background-size: auto, 150%;
+				display: flex;
+				justify-content: center;
+				min-height: 14em;
+				padding: 4em 2em;
+				text-align: center;
+			}
+
+			#hero h2 {
+				color: #ffffff;
+				font-size: 2em;
+				margin: 0;
+			}
+
+			/* Page body: same width, spacing and dividers as the index sections */
+			.page {
+				margin: 0 auto;
+				max-width: 54em;
+				padding: 4em;
+			}
+
+			.page > section {
+				border-top: solid 2px #efefef;
+				margin: 4em 0 0 0;
+				padding: 4em 0 0 0;
+			}
+
+			.page > section:first-child {
+				border-top: 0;
+				margin-top: 0;
+				padding-top: 0;
+			}
+
+			/* Reading text: black, serif, comfortable line length */
+			.reading {
+				color: #000000;
+				font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+				font-size: 14pt;
+				line-height: 1.7em;
+				margin: 0 auto;
+				max-width: 34em;
+			}
+
+			.reading p {
+				color: #000000;
+				margin: 0 0 1.25em 0;
+			}
+
+			.reading h3 {
+				color: #000000;
+				font-family: "Source Sans Pro", Helvetica, sans-serif;
+				margin: 1.5em 0 0.5em 0;
+			}
+
+			/* Video: stays 16:9 at any width */
+			.video {
+				aspect-ratio: 16 / 9;
+				background: #000000;
+				width: 100%;
+			}
+
+			.video iframe {
+				border: 0;
+				height: 100%;
+				width: 100%;
+			}
+
+			/* Gallery: image-only version of the index project articles */
+			#gallery .work-item .image {
+				margin: 0;
+			}
+
+			@media screen and (max-width: 736px) {
+				.page { padding: 3em 1.5em; }
+				.reading { font-size: 12pt; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Title -->
+			<header id="hero">
+				<h2>Project Title</h2>
+			</header>
+
+		<div class="page">
+
+			<!-- Text -->
+				<section>
+					<div class="reading">
+						<p>Write a short overview here: what the project is, who it is for, and what problem it solves.</p>
+						<p>Add a second paragraph for how you built it, what you learned, or where it stands now.</p>
+					</div>
+				</section>
+
+			<!-- Video: replace VIDEO_ID with the part after "v=" in the YouTube link -->
+				<section>
+					<div class="video">
+						<iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Project video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</section>
+
+			<!-- Pictures: click to enlarge. Copy an article block to add more. -->
+				<section id="gallery">
+					<div class="row">
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="../images/fulls/01.jpg" class="image fit thumb"><img src="../images/thumbs/01.jpg" alt="Describe this image" /></a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="../images/fulls/02.jpg" class="image fit thumb"><img src="../images/thumbs/02.jpg" alt="Describe this image" /></a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="../images/fulls/03.jpg" class="image fit thumb"><img src="../images/thumbs/03.jpg" alt="Describe this image" /></a>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="../images/fulls/04.jpg" class="image fit thumb"><img src="../images/thumbs/04.jpg" alt="Describe this image" /></a>
+						</article>
+					</div>
+				</section>
+
+			<!-- Back -->
+				<section>
+					<ul class="actions special">
+						<li><a href="../index.html#two" class="button">Back to Projects</a></li>
+					</ul>
+				</section>
+
+		</div>
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.poptrox.min.js"></script>
+		<script src="../assets/js/browser.min.js"></script>
+		<script>
+			(function($) {
+				var $window = $(window),
+					$body = $('body'),
+					$hero = $('#hero');
+
+				// Play initial animations on page load.
+				$window.on('load', function() {
+					window.setTimeout(function() { $body.removeClass('is-preload'); }, 100);
+				});
+
+				// Parallax: background lags slightly behind the page as you scroll.
+				var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+				if (!reduceMotion && !browser.mobile && browser.name != 'ie') {
+					$window.on('scroll', function() {
+						$hero.css('background-position', '0 0, 0 ' + (-100 + $window.scrollTop() * 0.3) + 'px');
+					}).triggerHandler('scroll');
+				}
+
+				// Lightbox gallery.
+				$window.on('load', function() {
+					$('#gallery').poptrox({
+						overlayColor: '#2c2c2c',
+						overlayOpacity: 0.85,
+						popupCloserText: '',
+						popupLoaderText: '',
+						selector: '.work-item a.image',
+						usePopupCaption: false,
+						usePopupDefaultStyling: false,
+						usePopupEasyClose: false,
+						usePopupNav: true,
+						windowMargin: (window.innerWidth <= 736 ? 0 : 50)
+					});
+				});
+			})(jQuery);
+		</script>
+
+	</body>
+</html>
