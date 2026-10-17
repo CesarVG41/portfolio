@@ -104,27 +104,24 @@
 			<!-- Text -->
 				<section>
 					<div class="reading">
-						<p>Proof‑of‑concept for localising manual impacts along a single line using two geophones, with the long‑term aim of enabling privacy‑preserving fall detection. Design to perform on a variety of surfaces. <p>
-						<p><em>Diploma in Engineering (Level 6) — Capstone Project (2026)</em></p>
+						<p>A fully analog autonomous robot designed to follow a path using sensor feedback and motor control. <p>
+						<p><em>Schematic design credit: Neutrino</em></p>
 						<h2>Project Highlights</h2>
 						<ul>
-						<li><strong>System Architecture:</strong> Designed an end-to-end vibration sensing system.</li>
-						<li><strong>Signal Processing:</strong> Implemented a signal processing pipeline to extract waveform features.</li>
-						<li><strong>PCB and Schematic Design:</strong> Designed two custom PCBs to interface with the geophones and Arduino.</li>
-						<li><strong>Algorithm Development:</strong> Developed an one-time-setup empirical reference calibration framework instead of the standard modeling of the complex wave propagation physics.</li>
+						<li>Designed and manufactured custom PCB in Altium Designer</li>
+						<li>Implemented analog motor control using H-Bridge drivers</li>
+						<li>Integrated infrared sensors and operational amplifiers for real-time line detection</li>
+						<li>Fully soldered and assembled the prototype using discrete components</li>
 						</ul>
 						<h2>Technologies Used</h2>
 						<ul>
-						<li><strong>Hardware:</strong> Geophone sensors, Arduino UNO R4 Wifi, NJM2068D low-noise op-amp</li>
-						<li><strong>Software:</strong> Python, Arduino IDE (C++)</li>
-						<li><strong>Circuits:</strong> 4th-order Butterworth active LPF, Unity-Gain High-Pass Filter</li>
-						<!-- <li><strong>Tools:</strong> Oscilloscope, Multimeter, Breadboard, Soldering Iron</li> -->
+						<li><strong>Hardware:</strong> IR Sensors, DC Motors, Op-Amps, Motor Driver</li>
+						<li><strong>Software:</strong> Altium Designer</li>
+						<!-- <li><strong>Circuits built:</strong> Comparator, </li> -->
 						</ul>						
 						<h2>Outcomes</h2>
 						<ul>
-						<li>Achieved 87.3% overall localization accuracy, up to 93.4% when excluding outliers.</li>
-						<li>Developed an adaptive system for different surfaces (wood, carpet) without surface property measurements.</li>
-						<li>Demonstrated the feasibility of using dual-geophone setup for fall detection in narrow areas (like hallways)</li>
+						<li>Achieved stable, real-time path tracking purely through analog circuitry.</li>
 						</ul>
 					</div>
 				</section>
@@ -140,29 +137,29 @@
 				<section id="gallery">
 					<div class="row">
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/robot/01.png" class="image fit thumb" data-caption="Left: Active Low-Pass Filter (single channel) | Right: Unity-Gain High-Pass Filter" loading="lazy"><img src="images/robot/01.png" /></a>
-							<h3>PCB Designs</h3>
+							<a href="images/robot/01.png" class="image fit thumb" data-caption="Custom single-layer, single-sided PCB layout designed in Altium. Optimized for sensor placement and motor driver power integrity." loading="lazy"><img src="images/robot/01.png" /></a>
+							<h3>PCB Design</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/robot/02.png" class="image fit thumb" data-caption="Left: Active Low-Pass Filter (single channel) | Right: Unity-Gain High-Pass Filter" loading="lazy"><img src="images/robot/02.png" /></a>
+							<a href="images/robot/02.png" class="image fit thumb" data-caption="Discrete analog circuit using a comparator for the IR sensors, directly driving an H-bridge to control two DC motors. Adapted from Neutrino’s original design" loading="lazy"><img src="images/robot/02.png" /></a>
 							<h3>Schematics</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/robot/03.png" class="image fit thumb" data-caption="Impact near geophone A (black)" loading="lazy"><img src="images/robot/03.png" /></a>
-							<h3>Impact near geophone A (black)</h3>
+							<a href="images/robot/03.png" class="image fit thumb" data-caption="" loading="lazy"><img src="images/robot/03.png" /></a>
+							<h3>Top view</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/robot/04.png" class="image fit thumb" data-caption="Impact near geophone B (pink)" loading="lazy"><img src="images/robot/04.png" /></a>
-							<h3>Impact near geophone B (pink)</h3>
+							<a href="images/robot/04.png" class="image fit thumb" data-caption="" loading="lazy"><img src="images/robot/04.png" /></a>
+							<h3>Side view</h3>
 						</article>
-						<article class="col-6 col-12-xsmall work-item">
+						<!-- <article class="col-6 col-12-xsmall work-item">
 							<a href="images/robot/05.png" class="image fit thumb" data-caption="Transient and characteristic extraction algorithm" loading="lazy"><img src="images/robot/05.png" /></a>
 							<h3>Processing flowchart</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
 							<a href="images/robot/06.png" class="image fit thumb" data-caption="Localisation algorithm" loading="lazy"><img src="images/robot/06.png" /></a>
 							<h3>Localisation flowchart</h3>
-						</article>
+						</article> -->
 					</div>
 				</section>
 

@@ -2828,11 +2828,16 @@ input, select, textarea {
 		.poptrox-popup .caption {
 			background: #fff;
 			bottom: 0;
+			box-sizing: border-box;    /* new */
 			cursor: default;
+			display: flex;             /* new: keeps one-liners vertically centered */
+			align-items: center;       /* new */
+			justify-content: center;   /* new */
 			font-size: 0.9em;
-			height: 3em;
 			left: 0;
-			line-height: 2.8em;
+			line-height: 1.4em;        /* was 2.8em */
+			min-height: 3em;           /* was height: 3em */
+			padding: 0.5em 1em;        /* new */
 			position: absolute;
 			text-align: center;
 			width: 100%;
