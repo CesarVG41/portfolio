@@ -2,7 +2,7 @@
 <!-- Save copies of this file in your projects/ folder, e.g. projects/midi-controller.html -->
 <html>
 	<head>
-		<title>Other Projects</title>
+		<title>Other projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -11,10 +11,10 @@
 			#hero {
 				align-items: center;
 				background-color: #1f1815;
-				background-image: url("assets/css/images/overlay.png"), url("images/bg.jpg");
-				background-position: 0 0, 0 -100px;
+				background-image: url("assets/css/images/overlay.png"), url("images/fulls/other_bg.png");
+				background-position: 0 0, 0 0;
 				background-repeat: repeat, no-repeat;
-				background-size: auto, 150%;
+				background-size: auto, 100%;
 				display: flex;
 				justify-content: center;
 				min-height: 14em;
@@ -24,7 +24,7 @@
 
 			#hero h2 {
 				color: #ffffff;
-				font-size: 2em;
+				font-size: 3.5em;
 				margin: 0;
 			}
 
@@ -63,7 +63,7 @@
 			}
 
 			.reading h3 {
-				color: #000000;
+				color: #b2b2b2;
 				font-family: "Source Sans Pro", Helvetica, sans-serif;
 				margin: 1.5em 0 0.5em 0;
 			}
@@ -96,7 +96,7 @@
 
 		<!-- Title -->
 			<header id="hero">
-				<h2>Project Title</h2>
+				<h2>Other Projects</h2>
 			</header>
 
 		<div class="page">
@@ -104,37 +104,70 @@
 			<!-- Text -->
 				<section>
 					<div class="reading">
-						<p>Write a short overview here: what the project is, who it is for, and what problem it solves.</p>
-						<p>Add a second paragraph for how you built it, what you learned, or where it stands now.</p>
+						<p>Proof‑of‑concept for localising manual impacts along a single line using two geophones, with the long‑term aim of enabling privacy‑preserving fall detection. Design to perform on a variety of surfaces. <p>
+						<p><em>Diploma in Engineering (Level 6) — Capstone Project (2026)</em></p>
+						<h2>Project Highlights</h2>
+						<ul>
+						<li><strong>System Architecture:</strong> Designed an end-to-end vibration sensing system.</li>
+						<li><strong>Signal Processing:</strong> Implemented a signal processing pipeline to extract waveform features.</li>
+						<li><strong>PCB and Schematic Design:</strong> Designed two custom PCBs to interface with the geophones and Arduino.</li>
+						<li><strong>Algorithm Development:</strong> Developed an one-time-setup empirical reference calibration framework instead of the standard modeling of the complex wave propagation physics.</li>
+						</ul>
+						<h2>Technologies Used</h2>
+						<ul>
+						<li><strong>Hardware:</strong> Geophone sensors, Arduino UNO R4 Wifi, NJM2068D low-noise op-amp</li>
+						<li><strong>Software:</strong> Python, Arduino IDE (C++)</li>
+						<li><strong>Circuits:</strong> 4th-order Butterworth active LPF, Unity-Gain High-Pass Filter</li>
+						<!-- <li><strong>Tools:</strong> Oscilloscope, Multimeter, Breadboard, Soldering Iron</li> -->
+						</ul>						
+						<h2>Outcomes</h2>
+						<ul>
+						<li>Achieved 87.3% overall localization accuracy, up to 93.4% when excluding outliers.</li>
+						<li>Developed an adaptive system for different surfaces (wood, carpet) without surface property measurements.</li>
+						<li>Demonstrated the feasibility of using dual-geophone setup for fall detection in narrow areas (like hallways)</li>
+						</ul>
 					</div>
 				</section>
 
 			<!-- Video: replace VIDEO_ID with the part after "v=" in the YouTube link -->
-				<section>
+				<!-- <section>
 					<div class="video">
 						<iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Project video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
-				</section>
+				</section> -->
 
-			<!-- Pictures: click to enlarge. Copy an article block to add more. -->
+			<!-- Pictures -->
 				<section id="gallery">
 					<div class="row">
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="Describe this image" /></a>
+							<a href="images/gp/01.png" class="image fit thumb" data-caption="Left: Active Low-Pass Filter (single channel) | Right: Unity-Gain High-Pass Filter" loading="lazy"><img src="images/gp/01.png" /></a>
+							<h3>PCB Designs</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="Describe this image" /></a>
+							<a href="images/gp/02.png" class="image fit thumb" data-caption="Left: Active Low-Pass Filter (single channel) | Right: Unity-Gain High-Pass Filter" loading="lazy"><img src="images/gp/02.png" /></a>
+							<h3>Schematics</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="Describe this image" /></a>
+							<a href="images/gp/03.png" class="image fit thumb" data-caption="Impact near geophone A (black)" loading="lazy"><img src="images/gp/03.png" /></a>
+							<h3>Impact near geophone A (black)</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="Describe this image" /></a>
+							<a href="images/gp/04.png" class="image fit thumb" data-caption="Impact near geophone B (pink)" loading="lazy"><img src="images/gp/04.png" /></a>
+							<h3>Impact near geophone B (pink)</h3>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/gp/05.png" class="image fit thumb" data-caption="Transient and characteristic extraction algorithm" loading="lazy"><img src="images/gp/05.png" /></a>
+							<h3>Processing flowchart</h3>
+						</article>
+						<article class="col-6 col-12-xsmall work-item">
+							<a href="images/gp/06.png" class="image fit thumb" data-caption="Localisation algorithm" loading="lazy"><img src="images/gp/06.png" /></a>
+							<h3>Localisation flowchart</h3>
 						</article>
 					</div>
 				</section>
 
-			<!-- Back -->
+			<!-- Back button-->
+			 <!-- TODO make persistent -->
 				<section>
 					<ul class="actions special">
 						<li><a href="index.html#two" class="button">Back to Projects</a></li>
@@ -168,12 +201,14 @@
 				// Lightbox gallery.
 				$window.on('load', function() {
 					$('#gallery').poptrox({
+						caption: function($a) { return $a.data('caption') || $a.next('h3').text(); },
+						// caption: function($a) { return $a.data('caption')},
 						overlayColor: '#2c2c2c',
 						overlayOpacity: 0.85,
 						popupCloserText: '',
 						popupLoaderText: '',
 						selector: '.work-item a.image',
-						usePopupCaption: false,
+						usePopupCaption: true,
 						usePopupDefaultStyling: false,
 						usePopupEasyClose: false,
 						usePopupNav: true,
