@@ -1,3 +1,5 @@
+/* accesibility mode active on default */
+
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
@@ -83,7 +85,9 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		/* BG COLOR. rlv */
+		background: #ffffff;
+		/* background: #264531; */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2039,8 +2043,11 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border-radius: 0.35em;
-		border: 0;
+		border-radius: 0.65em;
+		/* BORDER COLOR rlv */
+		/* border: solid 5px #37e2959f; */
+		/* border: solid 3.5px rgba(0, 0, 0, 0.1); */
+		border: solid 3.5px rgba(12, 121, 56, 0.2);
 		display: inline-block;
 		position: relative;
 	}
@@ -2562,7 +2569,8 @@ input, select, textarea {
 		.work-item .image {
 			/* justify-content: center; */
 			/* margin-left: 0; */
-			margin: 0 0 1.5em 0;
+			/* rlv */
+			margin: 0 0 1em 0;
 		}
 
 		.work-item h3 {
@@ -2604,9 +2612,11 @@ input, select, textarea {
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background-color: #1f1815;
+		/* background-color: #3a529c; */
+		background-color: #359486;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		/* Add blur to bg maybe?*/
+		/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -2713,6 +2723,39 @@ input, select, textarea {
 				padding-top: 0;
 			}
 
+/* Container */
+.project-skills {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+    gap: 3px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+	/* padding: 5px 0; */
+}
+
+/* pills rlv */
+.skill {
+    background-color: rgba(48, 101, 223, 0.05);
+    border: 1px solid rgba(83, 143, 255, 0.178);
+    /* border: 1px solid #359486; */
+    color: #2e8be8; /* Text color */
+    padding: 0px 5px;
+    /* border-radius: 20px; */
+    border-radius: 8px;
+    /* font-size: 0.85em; Smaller text */
+	/* Font for accessibility (vision impaired) */
+	/* op 1 */
+	font-size: 0.9em; 
+	/* op 2 */
+	/* font-size: 1.125rem; */
+    /* font-size: 0.85em; */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    /* text-transform: uppercase; */
+}
+
+
 /* Poptrox */
 
 	@-moz-keyframes spin {
@@ -2785,7 +2828,7 @@ input, select, textarea {
 		-ms-box-sizing: content-box;
 		box-sizing: content-box;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-		background: #fff;
+		background: #fff; 
 		border-radius: 0.35em;
 		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
 		overflow: hidden;
