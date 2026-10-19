@@ -105,22 +105,24 @@
 				<section>
 					<div class="reading">
 						<!-- <p>Proof‑of‑concept for localising manual impacts along a single line using two geophones, with the long‑term aim of enabling privacy‑preserving fall detection. Design to perform on a variety of surfaces. <p>
-						<p><em>Diploma in Engineering (Level 6) — Capstone Project (2026)</em></p> -->
-						<h2>CapaS</h2>
-						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/other/capas.png" class="image fit thumb" data-caption="" loading="lazy"><img src="images/other/capas.png" /></a>
-						</article>
+							<h2>CapaS (Productivity/Mental health mobile App)</h2>
+							<div class="row"> -->
+								<article class="col-6 col-12-xsmall work-item">
+								<a href="images/other/capas.png" class="image fit thumb" data-caption="CapaS (Capacity Slider)" loading="lazy"><img src="images/other/capas.png" /></a>
+							</article>
+						<!-- </div> -->
 						<div class="project-skills">
 							<span class="skill">App Ideation & Design</span>
 							<span class="skill">UI/UX Design</span>
 							<span class="skill">Pythonista (mobile python)</span>
 							<!-- <span class="skill">Web Development</span> -->
 						</div>
-						<p>Productivity app with filters based on user capacity (emotional status, energy, environment, schedule)</p>
-
+						<p>Abbreviation for "Capacity Slider", CapaS is a productivity app that displays activities that match the user's current capacity using a filtration and activity raiting system. The app was created for myself when desiring to be productive but not knowing what I would prefer giving my current mood and resources.</p>
+						<p><em>Status: Fully functional. Upgrades planned</em></p>
+						
 						<h2>Plantagochy</h2>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/other/plantagochy.png" class="image fit thumb" data-caption="" loading="lazy"><img src="images/other/plantagochy.png" /></a>
+							<a href="images/other/plantagochy.png" class="image fit thumb" data-caption="Its angry cuz its dry u.u" loading="lazy"><img src="images/other/plantagochy.png" /></a>
 						</article>
 						<div class="project-skills">
 							<span class="skill">Arduino</span>
@@ -132,7 +134,7 @@
 
 						<h2>MIDI animations</h2>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/other/midi.png" class="image fit thumb" data-caption="" loading="lazy"><img src="images/other/midi.png" /></a>
+							<a href="images/other/midi.png" class="image fit thumb" data-caption="Left: StemToMidi (costome upgrade version)   |   Right: MIDI-synced 2D Animation" loading="lazy"><img src="images/other/midi.png" /></a>
 						</article>
 						<div class="project-skills">
 							<span class="skill">Stem Separation</span>
@@ -232,7 +234,7 @@
 
 				// Lightbox gallery.
 				$window.on('load', function() {
-					$('#gallery').poptrox({
+					$('.page').poptrox({
 						caption: function($a) { return $a.data('caption') || $a.next('h3').text(); },
 						// caption: function($a) { return $a.data('caption')},
 						overlayColor: '#2c2c2c',
