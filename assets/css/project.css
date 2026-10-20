@@ -1,0 +1,17 @@
+/* Shared styles for project pages. Colours come from the variables at the end of main.css. */
+#hero { align-items: center; background-color: #1f1815; background-position: 0 0, 0 0; background-repeat: repeat, no-repeat; background-size: auto, 100%; display: flex; justify-content: center; min-height: 14em; padding: 5em 2em 4em; text-align: center; }
+#hero h1 { background: rgba(0, 0, 0, 0.65); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); border-radius: 0.35em; color: #ffffff; font-size: clamp(1.75em, 5vw, 3.25em); line-height: 1.25em; margin: 0; max-width: 100%; padding: 0.3em 0.7em; }
+.page { margin: 0 auto; max-width: 54em; padding: 4em; }
+.page > section { border-top: solid 2px var(--rule); margin: 4em 0 0 0; padding: 4em 0 0 0; }
+.page > section:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.reading { color: var(--read); font-family: Georgia, "Iowan Old Style", "Times New Roman", serif; font-size: calc(14pt * var(--ts, 1)); line-height: 1.7em; margin: 0 auto; max-width: 34em; }
+.reading p, .reading li { color: var(--read); }
+.reading p { margin: 0 0 1.25em 0; }
+.reading h3 { color: var(--muted); font-family: "Source Sans Pro", Helvetica, sans-serif; margin: 1.5em 0 0.5em 0; }
+.video { aspect-ratio: 16 / 9; background: #000; width: 100%; }
+.video iframe { border: 0; height: 100%; width: 100%; }
+#gallery .work-item .image { margin: 0; }
+@media screen and (max-width: 736px) {
+	.page { padding: 3em 1.5em; }
+	.reading { font-size: calc(13pt * var(--ts, 1)); }
+}

@@ -1,105 +1,25 @@
 <!DOCTYPE HTML>
-<!-- Save copies of this file in your projects/ folder, e.g. projects/midi-controller.html -->
-<html>
+<html lang="en">
 	<head>
-		<title>Impact Localiser</title>
+		<title>MIDI Controller for Upper-Limb Amputees — Cesar Vargas</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/project.css" />
 		<style>
-			/* Hero: same background as the index header, parallax handled in the script below */
-			#hero {
-				align-items: center;
-				background-color: #1f1815;
-				background-image: url("assets/css/images/overlay.png"), url("images/ldv/ldv_bg.png");
-				background-position: 0 0, 0 0;
-				background-repeat: repeat, no-repeat;
-				background-size: auto, 100%;
-				display: flex;
-				justify-content: center;
-				min-height: 14em;
-				padding: 4em 2em;
-				text-align: center;
-			}
-
-			#hero h2 {
-				color: #ffffff;
-				font-size: 3.5em;
-				margin: 0;
-			}
-
-			/* Page body: same width, spacing and dividers as the index sections */
-			.page {
-				margin: 0 auto;
-				max-width: 54em;
-				padding: 4em;
-			}
-
-			.page > section {
-				border-top: solid 2px #efefef;
-				margin: 4em 0 0 0;
-				padding: 4em 0 0 0;
-			}
-
-			.page > section:first-child {
-				border-top: 0;
-				margin-top: 0;
-				padding-top: 0;
-			}
-
-			/* Reading text: black, serif, comfortable line length */
-			.reading {
-				color: #000000;
-				font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
-				font-size: 14pt;
-				line-height: 1.7em;
-				margin: 0 auto;
-				max-width: 34em;
-			}
-
-			.reading p {
-				color: #000000;
-				margin: 0 0 1.25em 0;
-			}
-
-			.reading h3 {
-				color: #b2b2b2;
-				font-family: "Source Sans Pro", Helvetica, sans-serif;
-				margin: 1.5em 0 0.5em 0;
-			}
-
-			/* Video: stays 16:9 at any width */
-			.video {
-				aspect-ratio: 16 / 9;
-				background: #000000;
-				width: 100%;
-			}
-
-			.video iframe {
-				border: 0;
-				height: 100%;
-				width: 100%;
-			}
-
-			/* Gallery: image-only version of the index project articles */
-			#gallery .work-item .image {
-				margin: 0;
-			}
-
-			@media screen and (max-width: 736px) {
-				.page { padding: 3em 1.5em; }
-				.reading { font-size: 12pt; }
-			}
+			#hero { background-image: url("assets/css/images/overlay.png"), url("images/ldv/ldv_bg.png"); }
 		</style>
 	</head>
 	<body class="is-preload">
 
+		<a class="back-link" href="index.html#two"><span aria-hidden="true">←</span>&nbsp;Back to Projects</a>
+
 		<!-- Title -->
 			<header id="hero">
-				<h2>MIDI Controller for Upper-Limb Amputees</h2>
+				<h1>MIDI Controller for Upper-Limb Amputees</h1>
 			</header>
 
-		<div class="page">
+		<main class="page" id="content">
 
 			<!-- Text -->
 				<section>
@@ -122,10 +42,8 @@
 						<!-- <li><strong>Tools:</strong> Oscilloscope, Multimeter, Breadboard, Soldering Iron</li> -->
 						</ul>						
 						<h2>Status and Projections</h2>
-						<ul>
-							<p>Currently in the design and testing phase</p>
-							<strong>Next Steps:</strong> Smartphone latency optimization and drift correction solutions, followed by a "full song cover" test, for decisive evaluations.</p>
-						</ul>
+						<p>Currently in the design and testing phase.</p>
+						<p><strong>Next Steps:</strong> Smartphone latency optimization and drift correction solutions, followed by a "full song cover" test, for decisive evaluations.</p>
 					</div>
 				</section>
 
@@ -140,83 +58,39 @@
 				<section id="gallery">
 					<div class="row">
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/ldv/ui.png" class="image fit thumb" data-caption="Left: Concept planning | Right: Functional UI prototypes" loading="lazy"><img src="images/ldv/ui.png" /></a>
+							<a href="images/ldv/ui.png" class="image fit thumb" data-caption="Left: Concept planning | Right: Functional UI prototypes"><img src="images/ldv/ui.png" alt="UI Development: Left: Concept planning | Right: Functional UI prototypes" loading="lazy" /></a>
 							<h3>UI Development</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/ldv/hw.png" class="image fit thumb" data-caption="Left: Concept planning | Right: Execution in Phyphox and as a custom app" loading="lazy"><img src="images/ldv/hw.png" /></a>
+							<a href="images/ldv/hw.png" class="image fit thumb" data-caption="Left: Concept planning | Right: Execution in Phyphox and as a custom app"><img src="images/ldv/hw.png" alt="Hardware Development: Left: Concept planning | Right: Execution in Phyphox and as a custom app" loading="lazy" /></a>
 							<h3>Hardware Development</h3>
 						</article>
 						<!-- <article class="col-6 col-12-xsmall work-item">
-							<a href="images/gp/03.png" class="image fit thumb" data-caption="Impact near geophone A (black)" loading="lazy"><img src="images/gp/03.png" /></a>
+							<a href="images/gp/03.png" class="image fit thumb" data-caption="Impact near geophone A (black)"><img src="images/gp/03.png" alt="Impact near geophone A (black)" loading="lazy" /></a>
 							<h3>Impact near geophone A (black)</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/gp/04.png" class="image fit thumb" data-caption="Impact near geophone B (pink)" loading="lazy"><img src="images/gp/04.png" /></a>
+							<a href="images/gp/04.png" class="image fit thumb" data-caption="Impact near geophone B (pink)"><img src="images/gp/04.png" alt="Impact near geophone B (pink)" loading="lazy" /></a>
 							<h3>Impact near geophone B (pink)</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/gp/05.png" class="image fit thumb" data-caption="Transient and characteristic extraction algorithm" loading="lazy"><img src="images/gp/05.png" /></a>
+							<a href="images/gp/05.png" class="image fit thumb" data-caption="Transient and characteristic extraction algorithm"><img src="images/gp/05.png" alt="Processing flowchart: Transient and characteristic extraction algorithm" loading="lazy" /></a>
 							<h3>Processing flowchart</h3>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
-							<a href="images/gp/06.png" class="image fit thumb" data-caption="Localisation algorithm" loading="lazy"><img src="images/gp/06.png" /></a>
+							<a href="images/gp/06.png" class="image fit thumb" data-caption="Localisation algorithm"><img src="images/gp/06.png" alt="Localisation flowchart: Localisation algorithm" loading="lazy" /></a>
 							<h3>Localisation flowchart</h3>
 						</article> -->
 					</div>
 				</section>
 
-			<!-- Back button-->
-			 <!-- TODO make persistent -->
-				<section>
-					<ul class="actions special">
-						<li><a href="index.html#two" class="button">Back to Projects</a></li>
-					</ul>
-				</section>
-
-		</div>
+		</main>
 
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.poptrox.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
-		<script>
-			(function($) {
-				var $window = $(window),
-					$body = $('body'),
-					$hero = $('#hero');
-
-				// Play initial animations on page load.
-				$window.on('load', function() {
-					window.setTimeout(function() { $body.removeClass('is-preload'); }, 100);
-				});
-
-				// Parallax: background lags slightly behind the page as you scroll.
-				var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-				if (!reduceMotion && !browser.mobile && browser.name != 'ie') {
-					$window.on('scroll', function() {
-						$hero.css('background-position', '0 0, 0 ' + (-100 + $window.scrollTop() * 0.3) + 'px');
-					}).triggerHandler('scroll');
-				}
-
-				// Lightbox gallery.
-				$window.on('load', function() {
-					$('#gallery').poptrox({
-						caption: function($a) { return $a.data('caption') || $a.next('h3').text(); },
-						// caption: function($a) { return $a.data('caption')},
-						overlayColor: '#2c2c2c',
-						overlayOpacity: 0.85,
-						popupCloserText: '',
-						popupLoaderText: '',
-						selector: '.work-item a.image',
-						usePopupCaption: true,
-						usePopupDefaultStyling: false,
-						usePopupEasyClose: false,
-						usePopupNav: true,
-						windowMargin: (window.innerWidth <= 736 ? 0 : 50)
-					});
-				});
-			})(jQuery);
-		</script>
+		<script src="assets/js/project.js"></script>
+		<script src="assets/js/a11y.js"></script>
 
 	</body>
 </html>
